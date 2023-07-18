@@ -13,4 +13,11 @@ public class Employee {
     private String employeeSalary;
     @JsonProperty("employee_age")
     private String employeeAge;
+    private Integer id;
+
+    public Employee(String employeeName, String employeeSalary, String employeeAge) {
+        this.employeeName = employeeName;
+        this.employeeSalary = employeeSalary;
+        this.employeeAge = employeeAge;
+    }
 }
